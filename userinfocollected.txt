@@ -1,0 +1,12 @@
+username
+name
+company
+type
+blog
+location
+email
+bio
+public repos
+public gists
+followers
+following
