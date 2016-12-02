@@ -13,7 +13,11 @@ import codecs
 import glob
 
 path_to_chromedriver = '/Users/simrat/Downloads/chromedriver' # change path as needed
+#path_to_phantomjs = '/Users/simrat/Downloads/phantomjs-2.1.1-macosx/bin/phantomjs' # change path as needed
+
+#browser = webdriver.PhantomJS(executable_path = path_to_phantomjs)
 browser = webdriver.Chrome(executable_path = path_to_chromedriver)
+
 signupcount = 0
 
 ua = UserAgent()
@@ -57,7 +61,10 @@ def searchUser(username, firstName, lastName):
 		signupcount += 1
 		if signupcount>5:
 			print "RESETTING"
-			browser = webdriver.Chrome(executable_path = path_to_chromedriver)
+			#browser = webdriver.Chrome(executable_path = path_to_chromedriver)
+			browser.execute_script('window.localStorage.clear();')
+			browser.execute_script('window.sessionStorage.clear();')
+			browser.delete_all_cookies()
 			signupcount = 0
 
 
