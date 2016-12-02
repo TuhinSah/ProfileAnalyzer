@@ -44,7 +44,7 @@ def searchUser(username, firstName, lastName):
 	browser.get(url)
 	print browser.title
 	#print r.status_code
-	if 'Sign Up' not in browser.title:
+	if 'Sign' not in browser.title:
 		if 'pub/dir' in browser.current_url:
 			with codecs.open('data/searchpages/'+username+'.html', 'w', 'utf-8') as f1:
 				f1.write(browser.page_source+'\n')
