@@ -14,7 +14,7 @@ import glob
 
 path_to_chromedriver = '/Users/simrat/Downloads/chromedriver' # change path as needed
 browser = webdriver.Chrome(executable_path = path_to_chromedriver)
-
+signupcount = 0
 
 ua = UserAgent()
 
@@ -27,6 +27,8 @@ def getUserAgent():
 
 
 def searchUser(username, firstName, lastName):
+	global signupcount
+	global browser
 	if not firstName:
 		firstName = '+'
 	if not lastName:
@@ -45,11 +47,21 @@ def searchUser(username, firstName, lastName):
 	if 'Sign Up' not in browser.title:
 		if 'pub/dir' in browser.current_url:
 			with codecs.open('data/searchpages/'+username+'.html', 'w', 'utf-8') as f1:
-				f1.write(browser.page_source)
+				f1.write(browser.page_source+'\n')
+				f1.write(browser.current_url)
 		else:
 			with codecs.open('data/profilepages/'+username+'.html', 'w', 'utf-8') as f1:
-				f1.write(browser.page_source)
-	s = random.random()*40
+				f1.write(browser.page_source+'\n')
+				f1.write(browser.current_url)
+	else:
+		signupcount += 1
+		if signupcount>5:
+			print "RESETTING"
+			browser = webdriver.Chrome(executable_path = path_to_chromedriver)
+			signupcount = 0
+
+
+	s = random.random()*10
 	print s
 	print "Sleeping"
 	time.sleep(s)
@@ -62,12 +74,12 @@ f2 = open('notuser.txt', 'a')
 files = glob.glob('data/*/*.html')
 done = set()
 for file in files:
-	done.add(file.split('/')[2].rstrip('.html'))
+	done.add(file.split('/')[2][:-5])
 print done
 for user in users:
-	print len(done)
 	if user in done:
 		continue
+	print len(done)
 	print user
 	if users[user]['type'] != 'User':
 		print "Not user"
