@@ -1,7 +1,8 @@
 import cPickle as pickle 
 import glob
 import requests
-
+import getpass
+from github import Github
 
 def getGithubFeat(user):
 	curuser = users[user]
@@ -26,23 +27,44 @@ def getGithubFeat(user):
 		feat.append(1)
 	else:
 		feat.append(0)
-	r = requests.get('https://api.github.com/users/'+user+'/starred/')
-	starred = len(r.json())
-	feat.append(starred)
-	o = requests.get(curuser['organizations_url'])
-	org = len(o.json())
-	feat.append(org)
-	l = requests.get('https://opensourcecontributo.rs/api/user/'+user)
-	x = l.json()
-	contr = x['eventCount']
-	repos = len(x['repos'])
-	feat.append(contr)
-	feat.append(repos)
+	try:
+		u = g.get_user(user)
+	except:
+		print "not found"
+		feat.append(-1)
+		feat.append(-1)
+		print feat 
+		return feat
+	s = u.get_starred()
+	feat.append(len(list(s)))
+	o = u.get_orgs()
+	feat.append(len(list(o)))
+	# r = requests.get('https://api.github.com/users/'+user+'/starred/', auth=('the-archer', password))
+	# starred = len(r.json())
+	# if 'message' in r.json():
+	# 	print r.json()
+	# 	pickle.dump(gfeat, open('githubfeatures.p', 'wb'))
+	# 	a = raw_input()
+	# feat.append(starred)
+	# o = requests.get(curuser['organizations_url'], auth=('the-archer', password))
+	# org = len(o.json())
+	# if 'message' in o.json():
+	# 	print o.json()
+	# 	pickle.dump(gfeat, open('githubfeatures.p', 'wb'))
+	# 	a = input()
+	# feat.append(org)
+	# # l = requests.get('https://opensourcecontributo.rs/api/user/'+user)
+	# x = l.json()
+	# contr = x['eventCount']
+	# repos = len(x['repos'])
+	# feat.append(contr)
+	# feat.append(repos)
 	print feat
 	return feat
 
 
-
+password = getpass.getpass("Enter password for the-archer:")
+g = Github("the-archer", password)
 users = pickle.load(open('allusersinfo.p', 'rb'))
 try:
 	gfeat = pickle.load(open('githubfeatures.p', 'rb'))
