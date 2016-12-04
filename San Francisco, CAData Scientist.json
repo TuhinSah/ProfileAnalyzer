@@ -1,0 +1,848 @@
+[
+    {
+        "meanPay": "$138,985",
+        "jobTitle": "Data Scientist",
+        "company": "Facebook",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$123,724",
+        "jobTitle": "Data Scientist",
+        "company": "Airbnb",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$134,861",
+        "jobTitle": "Data Scientist",
+        "company": "Twitter",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$130,705",
+        "jobTitle": "Data Scientist",
+        "company": "Uber",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$7,030",
+        "jobTitle": "Data Scientist Intern - Monthly",
+        "company": "Facebook",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$119,000",
+        "jobTitle": "Data Scientist",
+        "company": "Lumiata",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$130,636",
+        "jobTitle": "Data Scientist",
+        "company": "StumbleUpon",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$122,667",
+        "jobTitle": "Data Scientist",
+        "company": "Salesforce",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$137,980",
+        "jobTitle": "Data Scientist",
+        "company": "Pandora Media",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$133,610",
+        "jobTitle": "Data Scientist",
+        "company": "Practice Fusion",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$128,937",
+        "jobTitle": "Data Scientist",
+        "company": "Square",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$103,625",
+        "jobTitle": "Data Scientist",
+        "company": "Tesla Motors",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$95k - $171k",
+        "jobTitle": "Data Scientist",
+        "company": "IBM",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$43 - $53",
+        "jobTitle": "Data Scientist Intern - Hourly",
+        "company": "Twitter",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$43 - $54",
+        "jobTitle": "Data Scientist Intern - Hourly",
+        "company": "Walmart eCommerce",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$106k - $124k",
+        "jobTitle": "Data Scientist",
+        "company": "Zillow",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$8k - $8k",
+        "jobTitle": "Data Scientist Intern - Monthly",
+        "company": "Walmart eCommerce",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$39 - $46",
+        "jobTitle": "Data Scientist Intern - Hourly",
+        "company": "Cablevision Systems",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$79k - $101k",
+        "jobTitle": "Data Scientist",
+        "company": "RichRelevance",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$118k - $159k",
+        "jobTitle": "Data Scientist",
+        "company": "AutoGrid",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$108k - $141k",
+        "jobTitle": "Data Scientist",
+        "company": "Ayasdi",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$119k - $134k",
+        "jobTitle": "Data Scientist",
+        "company": "6sense",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$113k - $162k",
+        "jobTitle": "Data Scientist",
+        "company": "Kixeye",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$115k - $156k",
+        "jobTitle": "Data Scientist",
+        "company": "Asana",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$79k - $94k",
+        "jobTitle": "Data Scientist",
+        "company": "Esurance",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$88k - $114k",
+        "jobTitle": "Data Scientist",
+        "company": "Alpine Data Labs",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$114k - $130k",
+        "jobTitle": "Data Scientist",
+        "company": "Glassdoor",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$160k - $178k",
+        "jobTitle": "Data Scientist",
+        "company": "Stitch Fix",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$97k - $113k",
+        "jobTitle": "Data Scientist",
+        "company": "Premise Data Corporation",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$117k - $157k",
+        "jobTitle": "Data Scientist",
+        "company": "Kabbage",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$121k - $150k",
+        "jobTitle": "Data Scientist",
+        "company": "Trulia",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$119k - $139k",
+        "jobTitle": "Data Scientist",
+        "company": "Tagged",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$123k - $141k",
+        "jobTitle": "Data Scientist",
+        "company": "Gap",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$110k - $145k",
+        "jobTitle": "Data Scientist",
+        "company": "Natera",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$89k - $155k",
+        "jobTitle": "Data Scientist",
+        "company": "Conviva",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$124k - $135k",
+        "jobTitle": "Data Scientist",
+        "company": "Tapjoy",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$64k - $104k",
+        "jobTitle": "Data Scientist",
+        "company": "Zephyr Health",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$117k - $148k",
+        "jobTitle": "Data Scientist",
+        "company": "Apollo Education Group",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$139k - $158k",
+        "jobTitle": "Data Scientist",
+        "company": "GREE International Entertainment",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$111k - $120k",
+        "jobTitle": "Data Scientist",
+        "company": "Capital One",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$110k - $118k",
+        "jobTitle": "Data Scientist",
+        "company": "LinkedIn",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$108k - $116k",
+        "jobTitle": "Data Scientist",
+        "company": "Oracle",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$203k - $218k",
+        "jobTitle": "Data Scientist",
+        "company": "Google",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$108k - $117k",
+        "jobTitle": "Data Scientist",
+        "company": "eBay",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$48 - $52",
+        "jobTitle": "Data Scientist Intern - Hourly",
+        "company": "Adobe",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$157k - $168k",
+        "jobTitle": "Data Scientist",
+        "company": "Symantec",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$136k - $146k",
+        "jobTitle": "Data Scientist",
+        "company": "Chevron",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$125k - $134k",
+        "jobTitle": "Data Scientist",
+        "company": "TrueCar",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$39k - $42k",
+        "jobTitle": "Data Scientist",
+        "company": "Engage3",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$126k - $138k",
+        "jobTitle": "Data Scientist",
+        "company": "MasterCard",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$114k - $124k",
+        "jobTitle": "Data Scientist",
+        "company": "Palantir Technologies",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$145k - $159k",
+        "jobTitle": "Data Scientist",
+        "company": "Kohl's",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$146k - $159k",
+        "jobTitle": "Data Scientist",
+        "company": "Microsoft",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$128k - $139k",
+        "jobTitle": "Data Scientist",
+        "company": "Rang Technologies",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$75k - $81k",
+        "jobTitle": "Data Scientist",
+        "company": "Nielsen",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$116k - $128k",
+        "jobTitle": "Data Scientist",
+        "company": "KPMG",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$139k - $151k",
+        "jobTitle": "Data Scientist",
+        "company": "PayPal",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$126k - $136k",
+        "jobTitle": "Data Scientist",
+        "company": "Verizon Wireless",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$137k - $147k",
+        "jobTitle": "Data Scientist",
+        "company": "Cisco Systems",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$108k - $116k",
+        "jobTitle": "Data Scientist",
+        "company": "SAP",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$109k - $118k",
+        "jobTitle": "Data Scientist",
+        "company": "J.P. Morgan",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$140k - $149k",
+        "jobTitle": "Data Scientist",
+        "company": "Philips",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$131k - $142k",
+        "jobTitle": "Data Scientist",
+        "company": "PNNL",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$111k - $119k",
+        "jobTitle": "Data Scientist",
+        "company": "EMC",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$140k - $150k",
+        "jobTitle": "Data Scientist",
+        "company": "Avanade",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$121k - $131k",
+        "jobTitle": "Data Scientist",
+        "company": "Walmart",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$119k - $130k",
+        "jobTitle": "Data Scientist",
+        "company": "Alliance Data",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$134k - $144k",
+        "jobTitle": "Data Scientist",
+        "company": "Visa Inc.",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$135k - $146k",
+        "jobTitle": "Data Scientist",
+        "company": "Epsilon",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$137k - $147k",
+        "jobTitle": "Data Scientist",
+        "company": "GitHub",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$120k - $130k",
+        "jobTitle": "Data Scientist",
+        "company": "Thomson Reuters",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$128k - $138k",
+        "jobTitle": "Data Scientist",
+        "company": "CNA",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$150k - $163k",
+        "jobTitle": "Data Scientist",
+        "company": "Expedia",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$136k - $148k",
+        "jobTitle": "Data Scientist",
+        "company": "Conversant",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$139k - $151k",
+        "jobTitle": "Data Scientist",
+        "company": "Zynga",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$140k - $152k",
+        "jobTitle": "Data Scientist",
+        "company": "ShopperTrak",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$110k - $119k",
+        "jobTitle": "Data Scientist",
+        "company": "IPG Mediabrands",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$106k - $114k",
+        "jobTitle": "Data Scientist",
+        "company": "TellApart",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$122k - $131k",
+        "jobTitle": "Data Scientist",
+        "company": "Cox Enterprises",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$130k - $140k",
+        "jobTitle": "Data Scientist",
+        "company": "HERE",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$112k - $123k",
+        "jobTitle": "Data Scientist",
+        "company": "Insurance Services Office",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$134k - $145k",
+        "jobTitle": "Data Scientist",
+        "company": "Novartis Pharmaceuticals",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$142k - $153k",
+        "jobTitle": "Data Scientist",
+        "company": "Rocket Fuel",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$121k - $130k",
+        "jobTitle": "Data Scientist",
+        "company": "SocialCode",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$183k - $198k",
+        "jobTitle": "Data Scientist",
+        "company": "Autodesk",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$120k - $130k",
+        "jobTitle": "Data Scientist",
+        "company": "Hotwire",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$127k - $138k",
+        "jobTitle": "Data Scientist",
+        "company": "Thermo Fisher Scientific",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$145k - $159k",
+        "jobTitle": "Data Scientist",
+        "company": "Etsy",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$118k - $125k",
+        "jobTitle": "Data Scientist",
+        "company": "Lightpath",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$141,770",
+        "jobTitle": "Senior Data Scientist",
+        "company": "Ayasdi",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$135,000",
+        "jobTitle": "Senior Data Scientist",
+        "company": "Glassdoor",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$80,432",
+        "jobTitle": "Clinical Laboratory Scientist-data Analyst",
+        "company": "Monogram Biosciences",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$132k - $143k",
+        "jobTitle": "Staff Data Scientist",
+        "company": "Walmart",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$117k - $126k",
+        "jobTitle": "Entry Level Data Scientist",
+        "company": "IBM",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$135k - $147k",
+        "jobTitle": "Data Scientist II",
+        "company": "Microsoft",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$118k - $126k",
+        "jobTitle": "Data Scientist II",
+        "company": "EMC",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$103k - $113k",
+        "jobTitle": "Senior Data Scientist",
+        "company": "Nielsen",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$157k - $170k",
+        "jobTitle": "Senior Data Scientist",
+        "company": "AT&T",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$119k - $130k",
+        "jobTitle": "Senior Data Scientist",
+        "company": "GE",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$148k - $159k",
+        "jobTitle": "Senior Data Scientist",
+        "company": "Ancestry",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$151k - $162k",
+        "jobTitle": "Senior Data Scientist",
+        "company": "IBM",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$165k - $180k",
+        "jobTitle": "Senior Data Scientist",
+        "company": "Microsoft",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$132k - $144k",
+        "jobTitle": "Senior Data Scientist",
+        "company": "KPMG",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$152k - $166k",
+        "jobTitle": "Senior Data Scientist",
+        "company": "Capital One",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$119k - $130k",
+        "jobTitle": "Senior Data Scientist",
+        "company": "SAP",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$154k - $167k",
+        "jobTitle": "Senior Data Scientist",
+        "company": "Verizon",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$124k - $136k",
+        "jobTitle": "Senior Data Scientist",
+        "company": "Allstate",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$119k - $130k",
+        "jobTitle": "Senior Data Scientist",
+        "company": "Exponent",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$172k - $188k",
+        "jobTitle": "Senior Data Scientist",
+        "company": "Amazon.com",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$168k - $180k",
+        "jobTitle": "Senior Data Scientist",
+        "company": "Oracle",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$137k - $147k",
+        "jobTitle": "Senior Data Scientist",
+        "company": "Walmart",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$136k - $147k",
+        "jobTitle": "Senior Data Scientist",
+        "company": "Alliance Data",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$137k - $149k",
+        "jobTitle": "Senior Data Scientist",
+        "company": "EMC",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$147k - $158k",
+        "jobTitle": "Senior Data Scientist",
+        "company": "Chegg",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$157k - $168k",
+        "jobTitle": "Senior Data Scientist",
+        "company": "PayPal",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$134k - $146k",
+        "jobTitle": "Senior Data Scientist",
+        "company": "Neustar",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$145k - $157k",
+        "jobTitle": "Senior Data Scientist",
+        "company": "ZestFinance",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$176k - $191k",
+        "jobTitle": "Senior Data Scientist",
+        "company": "Adobe",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$153k - $163k",
+        "jobTitle": "Senior Data Scientist",
+        "company": "Epsilon",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$152k - $166k",
+        "jobTitle": "Senior Data Scientist",
+        "company": "YuMe",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$154k - $166k",
+        "jobTitle": "Senior Data Scientist",
+        "company": "Conversant",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$128k - $140k",
+        "jobTitle": "Senior Data Scientist",
+        "company": "Verisk Analytics",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$134k - $147k",
+        "jobTitle": "Senior Data Scientist",
+        "company": "Thomson Reuters",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$137k - $148k",
+        "jobTitle": "Senior Data Scientist",
+        "company": "SuccessFactors",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$96k - $103k",
+        "jobTitle": "Junior Data Scientist",
+        "company": "Allstate",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$132k - $140k",
+        "jobTitle": "Junior Data Scientist",
+        "company": "NativeX",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$97k - $103k",
+        "jobTitle": "Data Scientist Intern",
+        "company": "Lightpath",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$184k - $198k",
+        "jobTitle": "Principal Data Scientist",
+        "company": "Microsoft",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$171k - $186k",
+        "jobTitle": "Principal Data Scientist",
+        "company": "Capital One",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$154k - $166k",
+        "jobTitle": "Principal Data Scientist",
+        "company": "Walmart",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$170k - $187k",
+        "jobTitle": "Principal Data Scientist",
+        "company": "Riverbed Technology",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$133k - $154k",
+        "jobTitle": "Senior Data Scientist",
+        "company": "LinkedIn",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$149k - $166k",
+        "jobTitle": "Senior Data Scientist",
+        "company": "Twitter",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$140k - $172k",
+        "jobTitle": "Senior Data Scientist",
+        "company": "Uber",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$138k - $166k",
+        "jobTitle": "Senior Data Scientist",
+        "company": "GitHub",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$116k - $124k",
+        "jobTitle": "Senior Data Scientist/Statistician",
+        "company": "Eventbrite",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$137k - $152k",
+        "jobTitle": "Senior Data Scientist/Statistician",
+        "company": "EMC",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$93k - $103k",
+        "jobTitle": "Scientist, Statistical and Data Sciences",
+        "company": "Exponent",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$178k - $217k",
+        "jobTitle": "Principal Data Scientist",
+        "company": "Walmart eCommerce",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$150k - $171k",
+        "jobTitle": "Principal Data Scientist",
+        "company": "Thomson Reuters",
+        "city": "San Francisco, CA"
+    },
+    {
+        "meanPay": "$141k - $166k",
+        "jobTitle": "Data Visualization Scientist",
+        "company": "Twitter",
+        "city": "San Francisco, CA"
+    }
+]
