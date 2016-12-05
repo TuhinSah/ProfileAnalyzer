@@ -5,27 +5,31 @@ from bs4 import BeautifulSoup as bs
 import codecs
 import pdb
 from collections import Counter
+from sklearn.metrics import r2_score
+
 
 def getLinkedInFeat(uname):
 	feat = []
 	c = umap[uname]
 	jobs = 0
-	if 'title' in c['current'] and c['current']['title'] != '-':
+	#if 'title' in c['current'] and c['current']['title'] != '-':
+	if c['current'] != '-':
 		jobs += 1
 	jobs += len(c['previous'])
 	feat.append(jobs)
-	skills = len(c['skills'])
-	feat.append(skills)
+	#skills = len(c['skills'])
+	feat.append(-1)
 
 	feat.append(len(c['education']))
-	feat.append(len(c['links']))
+	feat.append(-1)
+	#feat.append(len(c['links']))
 	print feat
-	skillset = Counter(c['skills'])
+	# skillset = Counter(c['skills'])
 	schools = set()
 	for ed in c['education']:
-		schools.add(ed['school'])
+		schools.add(ed)
 	schoolset = Counter(schools)
-	return feat, skillset, c['locality'], schoolset
+	return feat, schoolset, c['country']
 
 
 def addSkillFeat(uname, commonskills):
@@ -42,7 +46,7 @@ def addSchoolFeat(uname, commonschools):
 	c = umap[uname]
 	feat = []
 	for	school, count in commonschools:
-		if school in [x['school'] for x in c['education']]:
+		if school in c['education']:
 			feat.append(1)
 		else:
 			feat.append(0)
@@ -53,44 +57,44 @@ def addLocFeat(uname, commonloc):
 	c = umap[uname]
 	feat = []
 	for	loc, count in commonloc:
-		if loc == c['locality']:
+		if loc == c['country']:
 			feat.append(1)
 		else:
 			feat.append(0)
 	return feat
 
-with open('../data/ProfileData 5.json', 'r') as f3:
+with open('../data/ProfileCardData 2.json', 'r') as f3:
 	x = json.loads(f3.read())
 
 umap = {}
 for y in x:
-	if y['name']:
-		umap[y['name']] = y
+	if y['link']:
+		umap[y['link']] = y
 
 lfeat = pickle.load(open('../data/linkedinfeat.p', 'rb'))
 allskills = Counter()
 allschools = Counter()
 locations = []
-with codecs.open('../data/profilematches.txt', 'r', 'utf-8') as f1:
+with codecs.open('../data/searchmatches.csv', 'r', 'utf-8') as f1:
 	for line in f1:
 		sp = line.rstrip('\n').split(',')
 		uid = sp[0]
 		uname = ','.join(sp[1:])
 		print uid
-		lfeat[uid], ss, loc, sch = getLinkedInFeat(uname)
-		allskills  +=  ss
+		lfeat[uid], sch, loc = getLinkedInFeat(uname)
+		#allskills  +=  ss
 		allschools += sch
 		locations.append(loc)
-print allskills.most_common(50)
-print len(allskills)
-commonskills = allskills.most_common(50)
+# print allskills.most_common(50)
+# print len(allskills)
+# commonskills = allskills.most_common(50)
 
 commonloc = Counter(locations).most_common(10)
+print commonloc
 
 commonschools = allschools.most_common(50)
-pickle.dump(commonloc, open('../data/commonloc.p', 'wb'))
-pickle.dump(commonschools, open('../data/commonschools.p', 'wb'))
-#a = raw_input()
+print commonschools
+a = raw_input()
 
 # with codecs.open('../data/profilematches.txt', 'r', 'utf-8') as f1:
 # 	for line in f1:
@@ -102,7 +106,7 @@ pickle.dump(commonschools, open('../data/commonschools.p', 'wb'))
 # 		print lfeat[uid]
 # 		#allskills  +=  ss
 
-with codecs.open('../data/profilematches.txt', 'r', 'utf-8') as f1:
+with codecs.open('../data/searchmatches.csv', 'r', 'utf-8') as f1:
 	for line in f1:
 		sp = line.rstrip('\n').split(',')
 		uid = sp[0]
@@ -112,7 +116,7 @@ with codecs.open('../data/profilematches.txt', 'r', 'utf-8') as f1:
 		print lfeat[uid]
 		#allskills  +=  ss
 
-with codecs.open('../data/profilematches.txt', 'r', 'utf-8') as f1:
+with codecs.open('../data/searchmatches.csv', 'r', 'utf-8') as f1:
 	for line in f1:
 		sp = line.rstrip('\n').split(',')
 		uid = sp[0]

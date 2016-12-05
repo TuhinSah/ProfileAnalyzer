@@ -12,9 +12,11 @@ from selenium.webdriver.common.keys import Keys
 from selenium import webdriver
 import codecs
 
-if __name__ == "__main__":
-    driver = webdriver.Chrome(executable_path = "./chromedriver")
-    driver.get(sys.argv[1])
+path_to_chromedriver = '/Users/simrat/Downloads/chromedriver'
+
+def scrapePage(llink):
+    driver = webdriver.Chrome(executable_path = path_to_chromedriver)
+    driver.get(llink)
     profilePage = driver.page_source
 
     soup = BeautifulSoup(profilePage, "html.parser")
@@ -134,6 +136,6 @@ if __name__ == "__main__":
 
             education.append(programme)
     profile = {'name': name, 'links': links, 'locality': locality,'current': current, 'previous': jobs, 'skills': skills, 'education': education}
-
-    with open('ProileData.json', 'w') as fp:
-        json.dump(profile, fp)
+    return profile
+    #with open('ProileData.json', 'w') as fp:
+       # json.dump(profile, fp)
