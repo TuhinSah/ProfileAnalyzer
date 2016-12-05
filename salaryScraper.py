@@ -25,13 +25,13 @@ def obj_dict(obj):
 #enddef
 
 def json_export(data, cityName, title):
-    jsonFile = open("Data/" + cityName + title + ".json", "w+")
+    jsonFile = open("data/salary/" + cityName + title + ".json", "w+")
     jsonFile.write(json.dumps(data, indent=4, separators=(',', ': '), default=obj_dict))
     jsonFile.close()
 #enddef
 
 def init_driver():
-    driver = webdriver.Chrome(executable_path = "./chromedriver")
+    driver = webdriver.Chrome(executable_path = "/Users/simrat/Downloads/chromedriver")
     driver.wait = WebDriverWait(driver, 10)
     return driver
 #enddef
@@ -58,7 +58,7 @@ def search(driver, city, title):
     try:
         search_btn = WebDriverWait(driver, 10).until(EC.presence_of_element_located(
             (By.CLASS_NAME, "showHH")))
-        time.sleep(25)
+        time.sleep(5)
         title_field = driver.find_element_by_id("KeywordSearch")
         city_field = driver.find_element_by_id("LocationSearch")
         title_field.send_keys(title)
@@ -127,17 +127,25 @@ if __name__ == "__main__":
     time.sleep(10)
     # search(driver, city, title)
     print "\nStarting data scraping ..."
-    city_list = open("cities.txt").read().splitlines()
-    title_list = open("titles.txt").read().splitlines()
+    #city_list = open("cities.txt").read().splitlines()
+    #title_list = open("titles.txt").read().splitlines()
+    tc = []
+    with open('data/profilejobs.txt', 'r') as f1:
+        for line in f1:
+            title, loc = line.rstrip('\n').split('\t')
+            title=title.decode("utf-8")
+            asciititle=title.encode("ascii","ignore")
+            loc=loc.decode("utf-8")
+            asciiloc=loc.encode("ascii","ignore")
+            tc.append((asciititle, asciiloc))
     data_out = []
-    for city in city_list:
-        for title in title_list:
-            search(driver, city, 'Data Scientist')
-            appendable = get_data(driver, driver.current_url, city, [], False, 1)
-            print "\nExporting data to " + city + ".json"
-            if appendable:
-                data_out.append(appendable)
-                json_export(appendable, city, title)
+    for title, city in tc:
+        search(driver, city, title)
+        appendable = get_data(driver, driver.current_url, city, [], False, 1)
+        print "\nExporting data to " + city + ".json"
+        if appendable:
+            data_out.append(appendable)
+            json_export(appendable, city, title)
     if data_out:
         json_export(data_out, 'allcities', '')
     driver.quit()

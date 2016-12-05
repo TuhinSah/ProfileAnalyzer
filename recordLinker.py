@@ -3,6 +3,7 @@ import glob
 import pdb
 import json
 import editdistance
+from bs4 import BeautifulSoup as bs
 
 
 def getSimilarity(uid, user, linid, potmatch):

@@ -76,6 +76,7 @@ for file in files:
 	needed.add(file.split('/')[2][:-5])
 print len(needed)
 print len(gfeat)
+i = 0
 for user in needed:
 	if user not in gfeat:
 		print user
@@ -83,3 +84,14 @@ for user in needed:
 		if len(gfeat)%50 == 0:
 			print len(gfeat)
 			pickle.dump(gfeat, open('githubfeatures.p', 'wb'))
+	elif gfeat[user][8] == -1:
+		print user
+		i += 1
+		gfeat[user] = getGithubFeat(user)
+		if i%20 == 0:
+			print "dumping"
+			pickle.dump(gfeat, open('githubfeatures.p', 'wb'))
+
+
+pickle.dump(gfeat, open('githubfeatures.p', 'wb'))
+	
