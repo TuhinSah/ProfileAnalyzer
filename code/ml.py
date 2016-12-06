@@ -21,14 +21,14 @@ def loadData():
 		for line in f1:
 			uid, salary = line.rstrip('\n').split(',')
 			salary = int(salary)
-			xsamp.append(gfeat[uid] + lfeat[uid])
+			xsamp.append(gfeat[uid])
 			ysamp.append(salary)
 
 	with open('../data/searchsalaries2.txt', 'r') as f1:
 		for line in f1:
 			uid, salary = line.rstrip('\n').split(',')
 			salary = int(salary)
-			xsamp.append(gfeat[uid] + lfeat[uid])
+			xsamp.append(gfeat[uid])
 			ysamp.append(salary)
 	#pdb.set_trace()
 	print len(xsamp)
@@ -50,7 +50,7 @@ ypred = regr.predict(xsamp)
 rms = sqrt(mean_squared_error(ysamp, ypred))
 print rms
 
-pickle.dump(regr, open('../data/model.p', 'wb'))
+#pickle.dump(regr, open('../data/model.p', 'wb'))
 
 xs = np.array(xsamp)
 #pdb.set_trace()
@@ -71,15 +71,17 @@ x = np.array([x[0] for x in xsamp])
 m, b = np.polyfit(x, ysamp, 1)
 y = ysamp
 
-regression = ols("data ~ x", data=dict(data=y, x=x)).fit()
-#test = regression.outlier_test()
-#outliers = ((x[i],y[i]) for i,t in enumerate(test.icol(2)) if t < 0.8)
-#print 'Outliers: ', list(outliers)
-# Figure #
-figure = smgraphics.regressionplots.plot_fit(regression, 1)
-# Add line #
-smgraphics.regressionplots.abline_plot(model_results=regression, ax=figure.axes[0])
-#plt.show()
-#plt.scatter(x, ysamp)
-#plt.plot(x, m*x + b, '-')
-#plt.show()
+# regression = ols("data ~ x", data=dict(data=y, x=x)).fit()
+# #test = regression.outlier_test()
+# #outliers = ((x[i],y[i]) for i,t in enumerate(test.icol(2)) if t < 0.8)
+# #print 'Outliers: ', list(outliers)
+# # Figure #
+# figure = smgraphics.regressionplots.plot_fit(regression, 1)
+# # Add line #
+# smgraphics.regressionplots.abline_plot(model_results=regression, ax=figure.axes[0])
+
+plt.scatter(x, ysamp)
+plt.plot(x, m*x + b, '-')
+plt.ylabel('Salary in USD')
+plt.xlabel('No of Github Repositories')
+plt.show()

@@ -70,7 +70,7 @@ def main(glink, llink):
 	out['salary'] = sal
 	out['similar'] = []
 	for r in res:
-		out['similar'].append({'githublink':r[0], 'linkedinlink':r[1], 'salary':r[2]})
+		out['similar'].append({'githublink':r[0], 'linkedinlink':r[1], 'salary':r[2], 'job':r[3]})
 	with open('output.json', 'w') as fp:
 		json.dump(out, fp)
 

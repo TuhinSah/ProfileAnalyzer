@@ -6,4 +6,4 @@ def getPredictedSalary(feat):
 	res = model.predict([feat])
 	print res
 	sys.stdout.flush()
-	return res
+	return res[0]
